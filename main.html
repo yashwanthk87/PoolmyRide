@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoolMyRide - Login</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .main-header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 2px;
+            width: 100%;
+        }
+
+        .main-header h1 {
+            margin: 3px 0;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+        .main-header p {
+            margin: 3px 0;
+            font-size: 0.8em;
+            color: #e0e0e0;
+        }
+
+        .login-container {
+            width: 800px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-self: center; /* Center horizontally */
+            margin: auto auto; /* Center vertically and horizontally */
+        }
+
+        .login-form {
+            width: 50%;
+            padding: 30px;
+        }
+
+        .login-form h2 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1em;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 14px 20px;
+            background-color: #e91e63;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+
+        .forgot-password {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .welcome-section {
+            width: 50%;
+            background: linear-gradient(to right, #e91e63, #9c27b0);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .welcome-section h2 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .welcome-section p {
+            margin-bottom: 20px;
+            font-size: 1em;
+        }
+
+        .signup-button {
+            background-color: white;
+            color: #e91e63;
+            padding: 12px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <h1>Welcome to PoolMyRide</h1>
+        <p>Find or offer a ride easily and share the journey!</p>
+    </header>
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Sign In</h2>
+            <form id="loginForm">
+                <label for="username">USERNAME</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <input type="submit" value="Sign In" class="login-button">
+                <div class="remember-forgot">
+                    <label><input type="checkbox" name="remember"> Remember Me</label>
+                    <a href="#" class="forgot-password">Forgot Password</a>
+                </div>
+            </form>
+        </div>
+        <div class="welcome-section">
+            <h2>Welcome to login</h2>
+            <p>Don't have an account?</p>
+            <a href="#" class="signup-button">Sign Up</a>
+        </div>
+    </div>
+    <footer>
+        <p>Contact us at <a href="mailto:info@poolmyride.com">info@poolmyride.com</a></p>
+    </footer>
+</body>
+</html>
